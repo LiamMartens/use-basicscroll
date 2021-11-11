@@ -6,11 +6,13 @@ export function useBasicScroll<E extends HTMLElement>(
   config: basicScroll.Data
 ) {
   const instance = useMemo(() => {
-    if (ref.current) {
-      return basicScroll.create({
-        ...config,
-        elem: ref.current,
-      });
+    if (typeof window !== 'undefined') {
+      if (ref.current) {
+        return basicScroll.create({
+          ...config,
+          elem: ref.current,
+        });
+      }
     }
     return null;
   }, [ref.current, config]);

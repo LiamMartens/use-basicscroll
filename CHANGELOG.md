@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.3
+* Check window availability
+
 ## v1.0.2
 * Fixed build output
 
