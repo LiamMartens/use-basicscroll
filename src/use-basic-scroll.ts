@@ -2,7 +2,7 @@ import { useEffect, useMemo } from 'react';
 import * as basicScroll from 'basicscroll';
 
 export function useBasicScroll<E extends HTMLElement>(
-  ref: React.MutableRefObject<E>,
+  ref: React.MutableRefObject<E | null>,
   config: basicScroll.Data
 ) {
   const instance = useMemo(() => {
