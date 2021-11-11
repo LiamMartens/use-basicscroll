@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## v1.0.2
+* Fixed build output
+
 ## v1.0.1
 * Allow ref to be `null`
 * Updated build outputs

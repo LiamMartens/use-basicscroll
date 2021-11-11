@@ -1,6 +1,6 @@
 {
   "name": "use-basicscroll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "author": {
     "name": "Liam Martens",
@@ -8,9 +8,13 @@
     "url": "https://liammartens.com"
   },
   "source": "./src/index.ts",
-  "main": "./lib/index.js",
-  "module": "./lib/index.esm.js",
-  "exports": "./lib/index.modern.js",
+  "main": "./lib/index.cjs",
+  "module": "./lib/index.module.mjs",
+  "unpkg": "./lib/index.umd.js",
+  "exports": {
+    "import": "./lib/index.module.mjs",
+    "require": "./lib/index.cjs"
+  },
   "types": "./lib/index.d.ts",
   "license": "MIT",
   "files": [
